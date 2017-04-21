@@ -1,0 +1,70 @@
+header {
+	.logo {
+		display: block;
+		background: #031445;
+		padding: 40px 0;
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	.communication {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 35px;
+		padding-bottom: 33px;
+		.phone-number {
+			display: flex;
+			margin-bottom: 0;
+			.phone-ident {
+				margin-left: 5px;
+			}
+		}
+
+		.info-center {
+			display: flex;
+			align-items: center;
+			color: #a6b1b7;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.fa {
+			color: #e60000;
+			font-size: 20px;
+			margin-right: 5px;
+		}
+	}
+
+	.nav-set {
+		margin-bottom: 0;
+		.nav-list {
+			float: right;
+			li {
+				a {
+					font-size: 17px;
+					text-transform: uppercase;
+					color: #a6b1b7;
+					transition: 250ms;
+					&:hover {
+						background: transparent;
+						color: #010f42;
+					}
+					&:active {
+						background: transparent;
+					}
+					&:focus {
+						background: transparent;
+					}
+				}
+				&:last-child {
+					a {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

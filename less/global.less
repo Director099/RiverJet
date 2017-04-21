@@ -1,0 +1,74 @@
+body {
+	font: 300 14px "Roboto", "Arial", sans-serif;
+	color: #a6b1b7;
+}
+
+.back-color {
+	background: #031445;
+}
+
+.btn {
+	width: 200px;
+	color: #fff;
+	display: block;
+	padding: 11px 0;
+	border-radius: 10px;
+	border: none;
+	background: #011745;
+	&.btn-red {
+		background: #ce3045;
+		margin-left: auto;
+	}
+
+	&.ident-top {
+		margin-top: 35px;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:focus {
+		color: #fff;
+		outline: none;
+		&:active {
+			outline: none;
+		}
+	}
+}
+
+.title-name {
+	font: 900 17px "Roboto", "Arial", sans-serif;
+	color: #031445;
+	margin-top: 0;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 115px;
+		height: 1px;
+		background: #dce1e3;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		z-index: 1;
+		width: 38px;
+		height: 3px;
+		background-color: #ce3045;
+	}
+}
+
+.title-slide {
+	font: 900 40px "Roboto", "Arial", sans-serif;
+	color: #fff;
+	text-align: center;
+    margin-top: 90px;
+}
+
