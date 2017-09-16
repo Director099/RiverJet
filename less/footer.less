@@ -1,10 +1,14 @@
 footer {
 	padding: 30px 0;
 	.communication {
-		.fa {
-			font-size: 20px;
-			margin-right: 5px;
-			color: #fff;
+		.adress,
+		.phone-number {
+			// padding: 0 10px;
+			.fa {
+				font-size: 20px;
+				margin-right: 5px;
+				color: #fff;
+			}
 		}
 
 		.adress,
@@ -13,14 +17,29 @@ footer {
 			display: flex;
 			align-items: center;
 			color: #fff;
+			text-decoration: none;
 			&.phone-ident {
 				margin-left: 5px;
 			}
 		}
 
 		.social {
+			display: flex;
+			justify-content: space-between;
+			width: 170px;
 			a {
-				margin-right: 15px;
+				width: 35px;
+			    background: #cd2f47;
+			    border-radius: 110%;
+			    display: flex;
+			    height: 35px;
+			    justify-content: center;
+			    align-items: center;
+			    text-decoration: none;
+			    .fa {
+					font-size: 15px;
+					color: #fff;
+			    }
 			}
 		}
 	}
@@ -30,9 +49,15 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		padding: 0;
 		li {
 			a {
 				color: #fff;
+				text-decoration: none;
+				transition: 250ms;
+				&:hover {
+					color: #cd2f47;
+				}
 			}
 		}
 	}

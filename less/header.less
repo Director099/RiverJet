@@ -11,9 +11,12 @@ header {
 	.communication {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		align-items: center;
+		z-index: 1;
+		font-size: 14px;
 		padding-top: 35px;
-		padding-bottom: 33px;
+		padding-bottom: 34px;
 		.phone-number {
 			display: flex;
 			margin-bottom: 0;
@@ -25,7 +28,7 @@ header {
 		.info-center {
 			display: flex;
 			align-items: center;
-			color: #a6b1b7;
+			color: #333;
 			&:hover {
 				text-decoration: none;
 			}
@@ -40,28 +43,30 @@ header {
 
 	.nav-set {
 		margin-bottom: 0;
+		border-bottom: 0;
 		.nav-list {
 			float: right;
 			li {
 				a {
-					font-size: 17px;
+					font-size: 16px;
 					text-transform: uppercase;
-					color: #a6b1b7;
+					color: #333;
 					transition: 250ms;
+					&.active {
+						background: #010f42;
+						color: #fff;
+					}
+
 					&:hover {
-						background: transparent;
-						color: #010f42;
+						background: #010f42 !important;
+						color: #fff;
 					}
 					&:active {
-						background: transparent;
+						background: #010f42;
+						color: #fff;
 					}
 					&:focus {
 						background: transparent;
-					}
-				}
-				&:last-child {
-					a {
-						padding-right: 0;
 					}
 				}
 			}

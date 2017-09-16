@@ -4,32 +4,58 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>River Jet</title>
+	<link rel="icon" href="img/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" href="img/favicon-96x96.png" sizes="96x96">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:900&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700,900&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="js/owlcarousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="js/owlcarousel/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="style.min.css">
 </head>
 <body>
 	<header class="container">
-		<div class="row">
-			<div class="col-md-3 col-lg-3">
+		<div class="row mobile-column">
+			<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			    <div class="modal-dialog modal-sm" role="document">
+				    <div class="modal-content">
+				    	<div class="modal-header modal-header-set text-center">
+					    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title title-city">Оставьте заявку</h4>
+					        <p class="text-application">перезвоним в течении 5-10 минут.</p>
+					    </div>
+				       <form class="form-set" role="form">
+						    <div class="form-group">
+							    <input type="text" class="form-control" placeholder="Ваше имя" required>
+						    </div>
+						    <div class="form-group">
+							    <input type="email" class="form-control" placeholder="E-mail" required>
+						    </div>
+						    <div class="form-group">
+							    <input type="tel" class="form-control" placeholder="Телефон" required>
+						    </div>
+						    <button class="btn">Отравить</button>
+						</form>
+				    </div>
+			    </div>
+			</div>
+			<div class="col-xs-5 col-sm-12 col-md-3 col-lg-3">
 				<a href="index.html" class="logo">
 					<img class="img-responsive" src="img/logo.png" alt="Логотип">
 				</a>
 			</div>
-
-				<div class="communication col-md-9 col-lg-8 col-md-offset-0 col-lg-offset-1">
-					<span class="info-center"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Уфа, ул. Октябрьской Революции 40</span>
-					<p class="phone-number">
-						<a href="tel:+73472661533" class="info-center"><i class="fa fa-mobile" aria-hidden="true"></i> +7 (347) 266 15 33,</a>
-						<a href="tel:+73472164417" class="info-center phone-ident"> +7 (347) 216 44 17</a>
-					</p>
-					<button class="btn">Заказать звонок</button>
-				</div>
-				<nav class="navbar nav-set" role="navigation">
+			<div class="communication col-md-9 col-lg-8 col-md-offset-0 col-lg-offset-1">
+				<span class="info-center"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Уфа, ул. Октябрьской Революции 40</span>
+				<p class="phone-number">
+					<a href="tel:+73472661533" class="info-center"><i class="fa fa-mobile" aria-hidden="true"></i> +7 (347) 266 15 33,</a>
+					<a href="tel:+73472164417" class="info-center phone-ident"> +7 (347) 216 44 17</a>
+				</p>
+				<button class="btn" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</button>
+			</div>
+			<nav class="navbar nav-set col-xs-7 col-sm-12 col-md-9 col-lg-9" role="navigation">
+				<div class="row">
 				    <div class="navbar-header">
 				        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					        <span class="sr-only">Включить/выключить навигацию</span>
@@ -41,93 +67,120 @@
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav nav-list">
 							<li>
-								<a href="#">Продукция</a>
+								<a href="product.html">Продукция</a>
 							</li>
 							<li>
-								<a href="#">Акции</a>
+								<a href="sale.html">Акции</a>
 							</li>
 							<li>
-								<a href="#">О компании</a>
+								<a href="about-us.html">О компании</a>
 							</li>
 							<li>
-								<a href="#">Галерея</a>
+								<a href="gallary.html">Галерея</a>
 							</li>
 							<li>
-								<a href="#">Статьи</a>
+								<a href="blog.html">Статьи</a>
 							</li>
 							<li>
-								<a href="#">Контакты</a>
+								<a href="contact.html">Контакты</a>
 							</li>
 						</ul>
 					</div>
-				</nav>
-			</div>
+				</div>
+			</nav>
 		</div>
 	</header>
 	<main>
-		<div class="owl-carousel">
+		<div class="owl-carousel dark">
 			<div class="item">
-				<img src="img/slide-1.jpg" alt="Слайдер">
+				<figure class="img-dark">
+					<img src="img/slide-1.jpg" alt="Слайдер">
+				</figure>
+				<div class="container">
+					<section class="exhortation">
+						<h1 class="title-slide">River Jet – супер катер для яркой жизни, для тех кто любит приключения.</h1>
+						<p class="text-exhoration">Найди свой катер</p>
+					</section>
+				</div>
 			</div>
 			<div class="item">
-				<img src="img/slide-2.jpg" alt="Слайдер">
+				<figure class="img-dark">
+					<img src="img/slide-2.jpg" alt="Слайдер">
+				</figure>
+				<div class="container">
+					<section class="exhortation">
+						<h2 class="title-slide">Чайка - идеальная лодка для рыбалки и семейного отдыха</h2>
+						<p class="text-exhoration">Найди свой катер</p>
+					</section>
+				</div>
 			</div>
 			<div class="item">
-				<img src="img/slide-3.jpg" alt="Слайдер">
+				<figure class="img-dark">
+					<img src="img/slide-3.jpg" alt="Слайдер">
+				</figure>
+				<div class="container">
+					<section class="exhortation">
+						<h2 class="title-slide">Ощути настоящую скорость с нашими силовыми установками</h2>
+						<p class="text-exhoration">Найди свой катер</p>
+					</section>
+				</div>
 			</div>
 		</div>
 		<div class="container boats">
-			<div class="tabs-control" role="tablist">
-			    <div class="col-sm-4">
-			    	<a href="#home" class="tab active" aria-controls="home" role="tab" data-toggle="tab">
-			    		<img class="img-responsive center-block" src="img/icon/icon-tab-1.png" alt="Иконка">Катера RiverJet
-			    	</a>
+			<div class="boats-control clearfix">
+			    <div class="col-sm-4 ident-boats">
+			    	<div class="boats active">
+			    		<div class="icon boats-1"></div>
+			    		<span>Катера RiverJet</span>
+			    	</div>
 			    </div>
-			  	<div class="col-sm-4">
-			  		<a href="#profile" class="tab" aria-controls="profile" role="tab" data-toggle="tab">
-			  			<img class="img-responsive center-block" src="img/icon/icon-tab-2.png" alt="Иконка">Лодки “Чайка”
-			  		</a>
+			  	<div class="col-sm-4 ident-boats">
+			  		<div class="boats">
+			  			<div class="icon boats-2"></div>
+			  			<span>Лодки “Чайка”</span>
+			  		</div>
 			  	</div>
-			   <div class="col-sm-4">
-			   		<a href="#messages" class="tab" aria-controls="messages" role="tab" data-toggle="tab">
-			   	 		<img class="img-responsive center-block" src="img/icon/icon-tab-3.png" alt="Иконка">Силовые установки
-			   	 	</a>
+			   <div class="col-sm-4 ident-boats">
+			   		<div class="boats">
+			   			<div class="icon boats-3"></div>
+			   	 		<span>Силовые установки</span>
+			   	 	</div>
 			   </div>
 			</div>
-			<div class="tab-content row">
-			    <div role="tabpanel" class="tab-pane active" id="home">
-					<div class="col-md-7">
+			<div class="boat-content row">
+			    <div class="boats-pane active">
+					<div class="col-sm-6 col-md-7">
 						<h3 class="title-name color-blue">Катера RiverJet</h3>
 						<p>Водометный катер для путешествий и активного отдыха. Сочетает в себе скорость, безопасность, комфорт и спортивный стиль. Самая привлекательная цена в своем классе и низкая стоимость обслуживания делает очевидным выбор в пользу нашей техники.</p>
-						<a class="btn ident-top" href="#">Подробнее</a>
+						<a class="btn ident-top" href="boats-1.html">Подробнее</a>
 					</div>
-					<div class="col-md-5">
+					<div class="col-sm-6 col-md-5">
 						<img class="img-responsive" src="img/photo-2.jpg" alt="Фото">
 					</div>
 			    </div>
-			    <div role="tabpanel" class="tab-pane" id="profile">
-			    	<div class="col-md-7">
+			    <div class="boats-pane">
+			    	<div class="col-sm-6 col-md-7">
 						<h3 class="title-name color-blue">Лодки “Чайка”</h3>
 						<p>Каждая модель моторных лодок «Чайка», специально разрабатывалась для определённых условий эксплуатации и имеет оригинальный дизайн и необходимый функционал, для своей области применения.</p>
-						<a class="btn ident-top" href="#">Подробнее</a>
+						<a class="btn ident-top" href="boats-2.html">Подробнее</a>
 					</div>
-					<div class="col-md-5">
+					<div class="col-sm-6 col-md-5">
 						<img class="img-responsive" src="img/photo-3.jpg" alt="Фото">
 					</div>
 			    </div>
-			    <div role="tabpanel" class="tab-pane" id="messages">
-			    	<div class="col-md-7">
+			    <div class="boats-pane">
+			    	<div class="col-sm-6 col-md-7">
 						<h3 class="title-name color-blue">Силовые установки</h3>
 						<p>Наши водометные силовые установки «JetStar-200» оптимальны по соотношению мощность/вес, пригодны для установки в глисирующие корпуса всех типов.</p>
-						<a class="btn ident-top" href="#">Подробнее</a>
+						<a class="btn ident-top" href="boats-3.html">Подробнее</a>
 					</div>
-					<div class="col-md-5">
-						<img class="img-responsive" src="img/photo-4.jpg" alt="Фото">
+					<div class="col-sm-6 col-md-5">
+						<img class="img-responsive" src="img/photo-3.jpg" alt="Фото">
 					</div>
 			    </div>
 			</div>
 		</div>
-		<div class="feedback">
+		<div class="feedback" data-parallax="scroll" data-image-src="img/fon-2.jpg"  data-speed="0.75">
 			<div class="container">
 				<div class="row">
 					<section class="col-md-7 exhortation">
@@ -159,19 +212,19 @@
 				<section class="col-md-7">
 					<h3 class="title-name color-blue">Почему стоит обратиться именно к нам?</h3>
 					<div class="row">
-						<div class="col-sm-6 pluses">
+						<div class="col-xs-6 col-sm-6 pluses">
 							<img src="img/icon/icon-1.png">
 							<p>Производство аккредитовано морским регистром</p>
 						</div>
-						<div class="col-sm-6 pluses">
+						<div class="col-xs-6 col-sm-6 pluses">
 							<img src="img/icon/icon-2.png">
 							<p>Производственные площадки в Уфе и Подмосковье</p>
 						</div>
-						<div class="col-sm-6 pluses">
+						<div class="col-xs-6 col-sm-6 pluses">
 							<img src="img/icon/icon-3.png">
 							<p>Современные технологии и оборудование</p>
 						</div>
-						<div class="col-sm-6 pluses">
+						<div class="col-xs-6 col-sm-6 pluses">
 							<img src="img/icon/icon-4.png">
 							<p>Послегарантийное сервисное обслуживание</p>
 						</div>
@@ -186,7 +239,7 @@
 	<footer class="back-color">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 communication">
+				<div class="col-md-5 communication">
 					<p class="adress"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Уфа, ул. Октябрьской Революции 40</p>
 					<p class="phone-number">
 						<a href="tel:+73472661533" class="info-center"><i class="fa fa-mobile" aria-hidden="true"></i> +7 (347) 266 15 33,</a>
@@ -207,28 +260,25 @@
 						</a>
 					</p>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-7">
 					<ul class="list-set">
 						<li>
-							<a href="#">Главная</a>
+							<a href="product.html">Продукция</a>
 						</li>
 						<li>
-							<a href="#">Продукция</a>
+							<a href="sale.html">Акции</a>
 						</li>
 						<li>
-							<a href="#">Акции</a>
+							<a href="about-us.html">О компании</a>
 						</li>
 						<li>
-							<a href="#">О компании</a>
+							<a href="gallary.html">Галерея</a>
 						</li>
 						<li>
-							<a href="#">Галерея</a>
+							<a href="blog.html">Статьи</a>
 						</li>
 						<li>
-							<a href="#">Статьи</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
+							<a href="contact.html">Контакты</a>
 						</li>
 					</ul>
 					<a href="http://webarium.ru/" target="_blank" class="weblogo">
@@ -242,29 +292,7 @@
 	<script src="js/jquery/jquery-migrate-3.0.0.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/owlcarousel/dist/owl.carousel.min.js"></script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-		    loop:true,
-		    nav:false,
-		    autoplay:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    }
-		})
-	</script>
-	<script>
-		$('.tabs-control .tab').click(function() {
-			$('.tabs-control .tab').removeClass('active');
-			$(this).addClass('active');
-		});
-	</script>
+	<script src="js/paralax/parallax.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

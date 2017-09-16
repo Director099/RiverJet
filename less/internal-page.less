@@ -1,0 +1,46 @@
+main {
+	.brief-catalog {
+		padding: 20px 0;
+		background: #031445;
+	}
+	.product-boats {
+		position: relative;
+		.boats-ident {
+			display: flex;
+		    justify-content: center;
+		    flex-wrap: wrap;
+		    margin-bottom: 25px;
+			.btn-boats {
+				position: relative;
+				display: block;
+				text-align: center;
+				color: #031445;
+				text-decoration: none;
+				padding: 15px;
+				transition: 250ms;
+				font-weight: 700;
+				font-family: "Playfair Display SC","Arial",sans-serif;
+				&::before {
+					content: "";
+					position: absolute;
+				    width: 1px;
+				    height: 20px;
+				    background: #031445;
+				    transform: rotate(20deg);
+				    position: absolute;
+				    top: 50%;
+				    right: 0;
+				    margin-top: -10px;
+				}
+				&:last-child {
+					&::before {
+						display: none;
+					}
+				}
+				&:hover {
+					color: #ce3045;
+				}
+			}
+		}
+	}
+}

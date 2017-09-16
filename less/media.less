@@ -6,6 +6,19 @@
 			}
 		}
 	}
+	main {
+		.dark {
+			.item {
+				.exhortation {
+					margin-left: 0;
+					.text-exhoration {
+						top: 20px;
+					    font: 900 70px/86px "Playfair Display SC","Arial",sans-serif;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -14,12 +27,6 @@
 			padding: 20px 0;
 		}
 		.nav-set {
-			.navbar-header {
-				.icon-bar {
-					background: #031445;	
-				}
-			}
-
 			.navbar-collapse {
 				padding: 0;
 				.nav-list {
@@ -27,10 +34,379 @@
 					display: flex;
 					justify-content: space-between;
 					flex-wrap: wrap;
+				}
+			}
+		}
+	}
+
+	main {
+		.dark {
+			.item {
+				.exhortation {
+				    max-width: 700px;
+				    left: 50%;
+		            margin-left: -350px;
+		            margin-top: -90px;
+					.text-exhoration {
+						display: none;
+					}
+
+					.title-slide {
+						margin-top: 0;
+						font-size: 35px;
+					}
+				}
+			}
+		}
+		.feedback {
+		    padding-bottom: 30px;
+	        padding-top: 90px;
+			.exhortation {
+				.title-slide {
+					margin-top: 0;
+				    margin-bottom: 70px;
+				    font-size: 35px;
+				}
+				.text-exhoration {
+				    top: -60px;
+				    font: 900 87px/80px "Playfair Display SC","Arial",sans-serif;
+				}
+			}
+			.btn-red {
+				margin-right: auto;
+			}
+		}
+
+		.content {
+			.blog {
+				.text-preview {
+					.text {
+						min-height: 210px;
+					}
+				}
+			}
+			.blue-line {
+				.block-special {
+					.special {
+						flex-basis: 155px;
+					}
+				}
+				.price {
+					text-align: center;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.advantages {
+			.pluses {
+				margin-bottom: 20px;
+			}
+
+			.col-md-5 {
+				img {
+					display: none;
+				}
+			}
+		}
+	}
+
+	footer {
+		.communication {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+			.adress,
+			.phone-number,
+			.info-center {
+				// justify-content: center;
+				&.phone-ident {
+					margin-left: 5px;
+				}
+			}
+		}
+
+		.list-set {
+			padding: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+		width: inherit;
+	}
+
+	.feedback {
+		.container {
+			width: 750px;
+		}
+	}
+
+	// footer {
+	// 	.communication {
+	// 	    justify-content: space-between !important;
+	// 	}
+	// }
+}
+
+@media (max-width: 767px) {
+	header {
+		.logo {
+			padding: 5px 15px;
+		    width: 110px;
+		}
+
+		.mobile-column {
+			display: flex;
+			flex-direction: column;
+			.col-xs-5 {
+				z-index: 3;
+			}
+		}
+
+		.communication {
+    		justify-content: space-around;
+			span {
+				&.info-center {
+					display: none;
+				}
+			}
+		}
+
+		.nav-set {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    z-index: 2;
+		    border: 0;
+		    width: 100%;
+		    background: #011745;
+		    .navbar-header {
+				.icon-bar {
+					background: #fff;
+				}
+			}
+			.navbar-collapse {
+				background: #fff;
+				.nav-list {
+					display: initial;
+					text-align: center;
 					li {
 						&:first-child {
 							a {
-								padding-left: 0px;
+								padding-left: 15px;
+							}
+						}
+						&:last-child {
+							a {
+								padding-right: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		.dark {
+			.item {
+				.exhortation {
+				    margin-top: -41px;
+				    margin-left: -160px;
+				    max-width: 320px;
+				    .title-slide {
+				    	font-size: 25px;
+				    }
+		        }
+		    }
+		}
+
+		.boats {
+			.boats-control {
+				position: initial;
+				.ident-boats {
+					padding: 0;
+					.boats {
+					    border-bottom: 1px solid #fff;
+						border-radius: 0;
+					    padding: 20px 0;
+				        text-align: left;
+				        &.active {
+							box-shadow: 0 0 9px 1px rgba(52, 33, 18, 0.16);
+				        }
+
+						.icon {
+							width: 50%;
+							margin: 0;
+							display: inline-block;
+							&.boats-1,
+							&.boats-2,
+							&.boats-3 {
+								background-position-x: 100%;
+							}
+						}
+						span {
+						    width: 45%;
+						    display: inline-block;
+						    min-height: 35px;
+					        padding-left: 15px;
+						    vertical-align: text-bottom;
+						}
+					}
+				}
+			}
+
+			.boat-content {
+				padding: 20px 0;
+				.boats-pane {
+					.ident-top {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+
+		.content {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.blog {
+				.text-preview {
+					.text {
+						min-height: auto;
+					}
+					.btn {
+						margin-bottom: 20px;
+					}
+				}
+			}
+
+			.product {
+				.preview {
+					img {
+						width: 100%;
+					}
+					.text-preview {
+						.text {
+							min-height: auto;
+						}
+					}
+				}
+			}
+
+			.contact {
+				.ident {
+					margin-bottom: 20px;
+				}
+
+				.title-name {
+					display: flex;
+					justify-content: center;
+					&::after {
+						left: 50%;
+						margin-left: -57.5px;
+					}
+					&::before {
+						left: 50%;
+						margin-left: -19px;
+					}
+				}
+
+				.contact-info {
+					align-items: center;
+				}
+			}
+
+			.blue-line {
+				.block-special {
+					justify-content: space-around;
+					flex-wrap: wrap;
+					.special {
+						margin: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.list-set {
+			display: none;
+		}
+
+		.weblogo {
+			margin-right: auto;
+			margin-top: 0;
+		}
+	}
+}
+
+@media (max-width: 590px) {
+	main {
+		.brief-catalog {
+			.product-boats {
+				.boats-ident {
+					position: initial;
+					width: initial;
+					.col-xs-4 {
+						width: 100%;
+						.btn-boats {
+							border-radius: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	main {
+
+		.advantages {
+			.col-xs-6 {
+				width: 100%;
+			}
+		}
+
+		.feedback {
+			.exhortation {
+				.title-slide {
+					font-size: 25px;
+				}
+
+				.text-exhoration {
+					top: -40px;
+				    font: 900 57px/55px "Playfair Display SC","Arial",sans-serif;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 423px) {
+	header {
+		.communication {
+			.btn {
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	main {
+		.boats {
+			.boats-control {
+				.ident-boats {
+					.boats {
+						.icon {
+							&.boats-1,
+							&.boats-2,
+							&.boats-3 {
+								background-position-x: 0%;
 							}
 						}
 					}

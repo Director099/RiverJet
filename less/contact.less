@@ -1,0 +1,32 @@
+main {
+	.contact {
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			.info-center {
+				margin-bottom: 10px;
+				color: #333;
+				.fa {
+					margin-right: 5px;
+					font-size: 20px;
+					color: #e60000;
+				}
+			}
+		}
+		.title-right {
+			text-align: right;
+			&::after {
+				right: 0;
+				left: initial;
+			}
+			&::before {
+				right: 0;
+				left: initial;
+			}
+		}
+
+		.map {
+			height: 400px;
+		}
+	}
+}
